@@ -3,5 +3,5 @@ import nodeResolve from '@rollup/plugin-node-resolve'
 export default {
   input: 'main.js',
   output: { file: 'dist.js' },
-  plugins: [nodeResolve()],
+  plugins: [nodeResolve({ exportConditions: ['node'] })],
 }
